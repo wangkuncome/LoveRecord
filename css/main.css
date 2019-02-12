@@ -71,18 +71,11 @@
   }
   
   .modal-content {
-      opacity:.7;
+      opacity:.6;
       background: #040404;
       color: #A94442;
       line-height: 3rem;
       font-family: 'Gill Sans',Arial, sans-serif;
-  }
-
-  .carousel-caption {
-      opacity:.8;
-      font-family: 'Gill Sans',Arial, sans-serif;
-      font-size: 3rem;
-      padding-bottom: 10%;
   }
   
   .modal-header {

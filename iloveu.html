@@ -9,9 +9,7 @@
 </head>
 
 <body>
-    <!--<audio src="./music.mp3" autoplay="true" loop="loop"></audio>-->
-    <iframe src="./music.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-    </iframe>
+    <audio src="./music.mp3" autoplay="true" loop="loop"></audio>
     <div id="back">
         <!--<div class="mask"></div>-->
         <!-- 设置展示的图片，github pages不能有后台程序只能一条一条手动添加了 囧 -->
@@ -20,27 +18,21 @@
             <div id="background" class="carousel-inner">
                 <div class="item active">
                     <img src="./img/IMG_0418.JPG">
-                    <div class="carousel-caption">大脚老妞~</div>
                 </div>
                 <div class="item">
                     <img src="./img/IMG_0470.JPG">
-                    <div class="carousel-caption">我们有baby啦!</div>
                 </div>
                 <div class="item">
                     <img src="./img/IMG_0641.JPG">
-                    <div class="carousel-caption">黑衣夫妇^_^</div>
                 </div>
                 <div class="item">
                     <img src="./img/IMG_0653.JPG">
-                    <div class="carousel-caption">贵妇查一枚</div>
                 </div>
                 <div class="item">
                     <img src="./img/IMG_8952.JPG">
-                    <div class="carousel-caption">可怕的周庄一日游</div>
                 </div>
                 <div class="item">
                     <img src="./img/IMG_9804.JPG">
-                    <div class="carousel-caption">徐州杰伦演唱会，老婆与偶像距离最近的一次</div>
                 </div>
             </div>
         </div>
@@ -48,6 +40,7 @@
     <div class="modal show" style="top: 20%">
         <div class="modal-dialog">
             <div class="modal-content">
+                <div class="modal-header">
                     <h1 class="text-center" style="font-size: 4rem;">
                         Kun & Zha have been together for</h1>
                     <p class="text-center" style="font-size: 3rem;">
@@ -62,9 +55,10 @@
                     <p class="text-center" style="font-size: 3rem;">
                         day / hour / min / sec
                     </p>
-                <!--<div class="modal-body" >-->
-                    <!--<p class="text-center" id="say" style="font-size: 2rem;"></p>-->
-                <!--</div>-->
+                </div>
+                <div class="modal-body" >
+                    <p class="text-center" id="say" style="font-size: 2rem;"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -99,11 +93,11 @@
         var start = function() {
             var index = 0;
             var rate = 10000;
-            // $('#say').text(says[(index++) % says.length]);
+            $('#say').text(says[(index++) % says.length]);
          	var _play = function () {
-         		// $('#say').hide();
-                // $('#say').text(says[(index++) % says.length]);
-                // $('#say').fadeToggle();
+         		$('#say').hide();
+                $('#say').text(says[(index++) % says.length]);
+                $('#say').fadeToggle();
                 $('#carousel').carousel('next');
          	};
             setInterval(_play, rate);
