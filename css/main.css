@@ -15,7 +15,9 @@
       -o-transition-property: opacity;
       transition-property: opacity;
   }
-  
+
+  img { width: 100%; height: 100%; }
+
   .carousel-fade .carousel-inner .active {
       opacity: 1;
   }
