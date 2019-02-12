@@ -16,8 +16,6 @@
       transition-property: opacity;
   }
 
-  img { width: 100%; height: 100%; }
-
   .carousel-fade .carousel-inner .active {
       opacity: 1;
   }
@@ -73,9 +71,25 @@
   }
   
   .modal-content {
+      opacity:.6;
       background: #040404;
+      color: #A94442;
+      line-height: 3rem;
+      font-family: 'Gill Sans',Arial, sans-serif;
   }
   
+  .modal-header {
+      color: #A94442;
+  }
+
   .time-font {
       color: #fff;
+  }
+
+  .modal-body {
+      color: #fff;
+  }
+
+  .text-center {
+      opacity: 1;
   }

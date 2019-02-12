@@ -17,40 +17,47 @@
             <!-- Carousel items -->
             <div id="background" class="carousel-inner">
                 <div class="item active">
-                    <img src="./img/IMG_0418.jpg">
+                    <img src="./img/IMG_0418.JPG">
                 </div>
                 <div class="item">
-                    <img src="./img/IMG_0470.jpg">
+                    <img src="./img/IMG_0470.JPG">
+                </div>
+                <div class="item">
+                    <img src="./img/IMG_0641.JPG">
+                </div>
+                <div class="item">
+                    <img src="./img/IMG_0653.JPG">
+                </div>
+                <div class="item">
+                    <img src="./img/IMG_8952.JPG">
+                </div>
+                <div class="item">
+                    <img src="./img/IMG_9804.JPG">
                 </div>
             </div>
         </div>
-        <!--<div id="carousel"  class="carousel slide carousel-fade carousel-position">-->
-            <!--<div class="carousel-inner" style="width: 100%;height: 100%;" id="background">-->
-                <!--&lt;!&ndash;<div class="item active" style="width: 100%;height: 100%;">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<div style="width: 100%;height: 100%;background:url(./img/IMG_0470.jpg);background-size: cover;"></div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--<div class="item active" style="width: 100%;height: 100%;">-->
-                    <!--<div style="width: 100%;height: 100%;background:url(./img/IMG_0418.jpg);background-size: cover;"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
     </div>
-    <div class="modal show" style="top:24%;">
-        <div class="modal-dialog" style="opacity: .9">
-            <div class="modal-content" style="opacity:.85">
+    <div class="modal show" >
+        <div class="modal-dialog">
+            <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="text-center" style="color: #A94442;font-family: 'JournalRegular', Arial, sans-serif;font-size: 7rem;">the times we together</h1>
-                    <p class="text-center small-title">KUN & ZHA</p>
-                    <p class="text-center small-title">LOVING ON THE WAY</p>
+                    <h1 class="text-center" style="font-size: 4rem;">
+                        Kun & Zha have been together for</h1>
+                    <p class="text-center" style="font-size: 3rem;">
+                        <span id="day" class="time-font"></span>
+                        <span >/</span>
+                        <span id="hour" class="time-font"></span>
+                        <span >/</span>
+                        <span id="minute" class="time-font"></span>
+                        <span >/</span>
+                        <span id="second" class="time-font"></span>
+                    </p>
+                    <p class="text-center" style="font-size: 3rem;">
+                        day / hour / min / sec
+                    </p>
                 </div>
-                <div class="modal-body text-center" style="line-height: 1.5rem;font-family: 'JournalRegular', Arial, sans-serif;font-size: 3rem;">
-                    <p>
-                        <span id="day" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="hour" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="minute" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="second" class="time-font"></span>
-                    </p>
-                    <p>
-                        days/hours/min/sec
-                    </p>
-                    <p class="text-center" style="color:#A94442;font-size: 17px" id="say"></p>
+                <div class="modal-body" >
+                    <p class="text-center" id="say" style="font-size: 2rem;"></p>
                 </div>
             </div>
         </div>
@@ -74,14 +81,18 @@
 
         //设置每一张图片对应的文字
         var says = new Array(
-            "一路相伴,感谢有你",
-            "一路相伴,感谢有你2",
+            "大脚老妞~",
+            "我们有baby啦!",
+            "黑衣夫妇^_^",
+            "贵妇查一枚",
+            "可怕的周庄一日游",
+            "徐州杰伦演唱会，老婆与偶像距离最近的一次",
         );
 
 
         var start = function() {
             var index = 0;
-            var rate = 20000;
+            var rate = 10000;
             $('#say').text(says[(index++) % says.length]);
          	var _play = function () {
          		$('#say').hide();
